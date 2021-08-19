@@ -14,7 +14,7 @@ function inclusion_exclusion(P::Vector{Float64})
 
     m = length(P) ÷ 2
     first_half = P[1:m]
-    second_half = P[m:end]
+    second_half = P[m+1:end]
 
     p = inclusion_exclusion(first_half)
     q = inclusion_exclusion(second_half)
